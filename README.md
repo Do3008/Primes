@@ -2,13 +2,13 @@
 
 ## Authentication
 
-### 1. Set session [set](https://primes-mulapese.herokuapp.com/set_session) `https://primes-mulapese.herokuapp.com/set_session` (GET)
+### 1. Set session [set](https://primes-mulapese.herokuapp.com/set_session) (GET)
 
-### 2. Get session `https://primes-mulapese.herokuapp.com/get_session` (GET)
+### 2. Get session [get](https://primes-mulapese.herokuapp.com/get_session) (GET)
 **Response**
 - 500 Server error
 - 200 OK - {status, session}
-### 3. Get session `https://primes-mulapese.herokuapp.com/destroy_session` (GET)
+### 3. Destroy session [destroy](https://primes-mulapese.herokuapp.com/destroy_session) (GET)
 **Response**
 - 500 Server error
 - 200 OK - {status, session}
@@ -27,8 +27,8 @@
 
 # # User manual
 ## Sum all primes below N
-### Step 1: Set session by go to `https://primes-mulapese.herokuapp.com/set_session` (GET)
-### Step 2:  Get sum of primes below N by go to `https://primes-mulapese.herokuapp.com/primes/sum/:num` (GET) and replace :num with N number you want
+### Step 1: Set session by go to [set](https://primes-mulapese.herokuapp.com/set_session) (GET)
+### Step 2:  Get sum of primes below N by go to [primes](`https://primes-mulapese.herokuapp.com/primes/sum/10) (GET) and replace :num with N number you want
 
 # # Installation guide
 ## Nodejs (All code in vinid folder)
