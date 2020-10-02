@@ -2,7 +2,7 @@
 
 ## Authentication
 
-### 1. Set session `https://primes-mulapese.herokuapp.com/set_session` (GET)
+### 1. Set session [set](https://primes-mulapese.herokuapp.com/set_session) `https://primes-mulapese.herokuapp.com/set_session` (GET)
 
 ### 2. Get session `https://primes-mulapese.herokuapp.com/get_session` (GET)
 **Response**
