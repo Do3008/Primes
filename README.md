@@ -42,6 +42,7 @@
 - Open cmd and go to vinid-golang folder
 - Install golang by follow direction in https://golang.org/dl/
 - Run program with ```go run main.go```
+- To test program run ```go test -v```
 
 # # Deployment guide
 - Open cmd and go to vinid folder and follow these step
