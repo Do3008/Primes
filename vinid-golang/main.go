@@ -26,7 +26,7 @@ func sumPrimes(w http.ResponseWriter, r *http.Request){
     numInt, err := strconv.Atoi(params["num"])
     if err != nil {
         // handle error
-		fmt.Println(err)
+		// fmt.Println(err)
 		error := &Error{Message: "Invalid param"}
 		json.NewEncoder(w).Encode(error)
 		return
@@ -36,7 +36,7 @@ func sumPrimes(w http.ResponseWriter, r *http.Request){
 		json.NewEncoder(w).Encode(error)
 		return
 	}
-    fmt.Println(params["num"], numInt)
+    // fmt.Println(params["num"], numInt)
 
 //
 	sieve := make([]bool, numInt)
@@ -53,15 +53,15 @@ func sumPrimes(w http.ResponseWriter, r *http.Request){
 //
 	prime := &Prime{Sum: sum}
 
-	fmt.Println("Endpoint primes")
-	fmt.Println(params)
+	// fmt.Println("Endpoint primes")
+	// fmt.Println(params)
 
 	json.NewEncoder(w).Encode(prime)
 }
 
 
 func homePage(w http.ResponseWriter, r *http.Request){
-	fmt.Fprint(w, "Sum of all primes below param")
+	fmt.Fprint(w, `<p>Go to <a href="https://github.com/Do3008/Primes">Mulapese</a>  for guidelines</p>`)
 }
 
 func handleRequests(){
@@ -69,7 +69,7 @@ func handleRequests(){
 
 	myRouter.HandleFunc("/", homePage)
 	myRouter.HandleFunc("/primes/sum/{num}", sumPrimes)
-	log.Fatal(http.ListenAndServe(":8080", myRouter))
+	log.Fatal(http.ListenAndServe(":8081", myRouter))
 }
 
 func main(){
