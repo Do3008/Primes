@@ -2,19 +2,19 @@
 
 ## Authentication
 
-### 1. Set session `/set_session` (GET)
+### 1. Set session `https://primes-mulapese.herokuapp.com/set_session` (GET)
 
-### 2. Get session `/get_session` (GET)
+### 2. Get session `https://primes-mulapese.herokuapp.com/get_session` (GET)
 **Response**
 - 500 Server error
 - 200 OK - {status, session}
-### 3. Get session `/destroy_session` (GET)
+### 3. Get session `https://primes-mulapese.herokuapp.com/destroy_session` (GET)
 **Response**
 - 500 Server error
 - 200 OK - {status, session}
 
 ## Primes API
-### 1. Get sum of primes below N `/primes/sum/:num` (GET)
+### 1. Get sum of primes below N `https://primes-mulapese.herokuapp.com/primes/sum/:num` (GET)
 **Request**
 - param num is a number greater than or equal to 2
 - session (have granted before)
@@ -27,8 +27,8 @@
 
 # # User manual
 ## Sum all primes below N
-### Step 1: Set session by go to `/set_session` (GET)
-### Step 2:  Get sum of primes below N by go to `/primes/sum/:num` (GET) and replace :num with N number you want
+### Step 1: Set session by go to `https://primes-mulapese.herokuapp.com/set_session` (GET)
+### Step 2:  Get sum of primes below N by go to `https://primes-mulapese.herokuapp.com/primes/sum/:num` (GET) and replace :num with N number you want
 
 # # Installation guide
 ## Nodejs (All code in vinid folder)
